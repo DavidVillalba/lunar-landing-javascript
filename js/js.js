@@ -64,7 +64,7 @@ function moverNave(){
 	v +=a*dt;
 	y +=v*dt;
 	//actualizar marcadores
-	velocidad.innerHTML=v;
+	velocidad.innerHTML=v.toFixed(2);
 	altura.innerHTML=y;
 	
 	//mover hasta que top sea un 70% de la pantalla
