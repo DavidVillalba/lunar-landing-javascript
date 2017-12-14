@@ -5,7 +5,7 @@ var dt = 0.016683;
 var timer=null;
 var timerFuel=null;
 //NAVE
-var y = 10; // altura inicial y0=10%, debe leerse al iniciar si queremos que tenga alturas diferentes dependiendo del dispositivo
+var y = 0; // altura inicial y0=10%, debe leerse al iniciar si queremos que tenga alturas diferentes dependiendo del dispositivo
 var v = 0;
 var c = 100;
 var a = g; //la aceleración cambia cuando se enciende el motor de a=g a a=-g (simplificado)
@@ -68,7 +68,7 @@ function moverNave(){
 	altura.innerHTML=y;
 	
 	//mover hasta que top sea un 70% de la pantalla
-	if (y<70){ 
+	if (y<64){ 
 		document.getElementById("nave").style.top = y+"%"; 
 	} else { 
 		stop();
